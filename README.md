@@ -1,6 +1,7 @@
 # Design Portfolio
 
-## Hi, I’m Lisa — a research-driven product designer with a background in classical piano, performance, and creative teaching.
-For over two decades, I’ve helped learners thrive through thoughtful problem-solving and human connection. That same mindset shapes my approach to design today: empathetic, curious, and collaborative. I care about the details that make tools feel not just functional, but meaningful.<br><br>
-Recently, I designed a mobile app for a local running community and improved a piano technician’s website — combining user research, interaction design, and frontend skills to bring ideas to life.<br><br>
-I’m especially drawn to projects that blend wellness, creativity, and technology, and I’m always looking for ways to make digital experiences feel more human.
+## Hi, I’m Lisa, a research-driven designer with a background in classical piano, performance, and creative teaching.
+<div style="border-left: 4px solid #1383A6; padding-left: 16px;">
+This portfolio showcases RunScape, a mobile app prototype I designed using Figma, as well as some recent samples of my freelance web design work for clients in the music and travel industries. To show my level of proficiency in JavaScript, I've embedded a link to an in-progress project on GitHub featuring a composer's music catalogue. The link to a video trailer I created for a collaborative music/arts event in Toronto is the final piece on display.<br><br>
+If there is anything you should know about my work style, it's that while I am creative, I am also highly practical. And neat. That means, I don't just create. I make sure that files are named according to set conventions. I keep in mind what is best both for the company and the client. Like many others, I've adapted to using AI tools in my workflow but not 100%. Oversight remains key.
+</div>
