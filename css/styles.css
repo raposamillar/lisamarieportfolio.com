@@ -1,19 +1,71 @@
-body {
-  font-family: sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: #1383A6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FDC82F;
+}
+
+a img {
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.05);
+}
+
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  font-family: 'Red Hat Display',sans-serif;
+  margin: 0 auto;
+  padding: 0;
   background: #f9f9f9;
-  color: #333;
+  color: #333333;
+  line-height: 1.6;
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   background: #1383A6;
-  color: white;
+  color: #FFFFFF;
   padding: 2rem;
   text-align: center;
 }
 
+header p {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive, serif;
+  font-size: 4rem;
+}
+
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 1rem;
 }
 
@@ -23,21 +75,79 @@ nav a {
   text-decoration: none;
 }
 
-.content {
+#about {
+  width: 100%;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #FFFFFF;
+}
+
+details summary {
+  cursor: pointer;
+  color: #1383A6;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+details summary:hover {
+  color: #FDC82F;
+}
+
+.portfolio-description {
+  background-color: #1383A6;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 
 .project {
-  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background: #FFFFFF;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-left: 5px solid #43A6C6;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.project-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 725px;
+  height: 450px;
+}
+
 footer {
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;

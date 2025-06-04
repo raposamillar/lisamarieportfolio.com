@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lisa's Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Lisa’s Portfolio</h1>
-    <p>UX Designer Who Codes | Creative Professional | Pianist</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.svg" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Clicker+Script&family=Style+Script&display=swap" rel="stylesheet">
+    <title>Lisa's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lisa’s Portfolio</h1>
+      <p>UX Designer Who Codes | Creative Professional | Pianist</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <div class="content">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m Lisa — a product designer with a background in classical piano, performance, and creative teaching. I bring curiosity, empathy, and detail to every design I create.</p>
-    </section>
+    <main class="main-flex">
+      <div class="content">
+        <section id="about">
+          <h2>About Me</h2>
+            <p>I’m Lisa, a research-driven designer with hybrid technical skills
+              informed by my background in classical piano, performance, and
+              creative teaching. I enjoy working with clients to create solutions
+              that are both attractive and accessible.</p>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
+            <details>
+              <summary>More</summary>
+              <p class="portfolio-description">This portfolio showcases RunScape, a mobile app prototype I designed using Figma, as well as some recent samples of my freelance web design work for clients in the music and travel industries. To show my level of proficiency in JavaScript, I've embedded a link to an in-progress project on GitHub featuring a composer's music catalogue. The link to a video trailer I created for a collaborative music/arts event in Toronto is the final piece.</p>
+              <p class="work-style">If there is anything you should know about my work style, it's that while I am creative, I'm also highly practical. And neat. That means, I don't just create. I make sure that files are named according to set conventions. I keep in mind what is best for the company, client, and product. Similarly, like many designers I've mindfully adapted the use of AI tools into my workflow. I believe in using technology to enhance creativity, not replace it.</p>
+            </details>
+        </section>
 
-      <div class="project">
-        <h3>RunScape – Running App</h3>
-        <p>A mobile app that helps local runners explore, track, and share routes. Designed with research, user flows, and a refined UI palette.</p>
+        <section id="projects">
+          <h2>Selected Projects</h2>
+
+          <div class="project">
+            <h3>RunScape – Running App 2025 | Figma</h3>
+              <p>RunScape is a mobile app prototype designed with and for runners.<br /><br />I
+                interviewed a diverse set of participants whose ages spanned four
+                decades to uncover the key features they wanted in a local running
+                app. We started with a current state analysis of the <a href="https://github.com/raposamillar/running-routes" target="_blank">Running Routes
+                application I had previously designed and coded</a>, and used that as a
+                springboard for this new and improved product.<br /><br />
+                RunScape supports route planning, community connection, and
+                integration with popular health apps.</p>
+              <p><a href="https://vimeo.com/1074721034">View a short walkthrough video (1.5 min.)</a></p>
+              <iframe src="https://embed.figma.com/design/yH9j1BblOYRLKpL48e9XEU/RunScape--Discover.-Connect.-Run.?node-id=2077-2&embed-host=share" allowfullscreen></iframe>
+          </div>
+
+          <div class="project">
+            <h3>Ann Callaway, composer – Web Design 2024 | Squarespace</h3>
+              <p>An award-winning American composer needed a new domain and website.
+                For ease of maintainability, we chose Squarespace. I designed the
+                site quickly to meet a deadline before an important performance.
+                Palette decisions and styling were based upon the vibrancy of the
+                composer's musical oeuvre and natural surroundings in California.</p>
+              <p><a href="https://annmariecallaway.com" target="_blank">View Ann Callaway's Website</a></p>
+          </div>
+
+          <div class="project">
+            <h3>Park Avenue Travel, Inc. – Web Design 2023 | WordPress with Elementor Pro</h3>
+              <p>Park Avenue Travel needed a new website and matching business cards to replace decade+ old designs. The owner requested an updated logo to reflect the current direction of the 35-year-old travel agency. The new site was the result of several Zoom meetings and back-and-forth email correspondence to ensure client satisfaction. It was built using WordPress + Elementor Pro with custom HTML5 and CSS3 styling added. Files were meticulously renamed for SEO optimization.</p>
+              <p><a href="https://parkavenuetravel.com" target="_blank">View Park Avenue Travel's Website</a></p>
+              <a href="https://parkavenuetravel.com" target="_blank"><img src="assets/images/park-avenue-travel-logo.jpg" alt="Park Avenue Travel logo" class="project-logo" /></a>
+          </div>
+
+          <div class="project">
+            <h3>Music Catalogue – JavaScript Project | GitHub (WIP)</h3>
+              <p>I began this project in December of 2024 primarily for the sake of practicing JavaScript using real-world datasets. All of the information is drawn from the composer's Squarespace website, which I currently maintain.</p>
+              <p><a href="https://github.com/raposamillar/christopher-kies-compositions" target="_blank">View Musical Compositions by Christopher Kies on GitHub</a></p>
+          </div>
+
+          <div class="project">
+            <h3>Clavier à Couleurs: An Exhibit of Piano Preludes – Video Trailer 2019 | Final Cut Pro</h3>
+              <p>I led the production and editing process for a video trailer for a collaborative music/arts event in Toronto in which I was a performer. The video was designed to be shared on social media and featured a mix of original footage and stock images.</p>
+              <p><a href="https://vimeo.com/manage/videos/364428870" target="_blank">View the Video Trailer on Vimeo</a></p>
+        </section>
+
+        <section id="resume">
+          <h2>Resume</h2>
+            <!-- <p>Download my resume: <a href="" target="_blank">Lisa's Resume</a></p> -->
+            <p>View my profile on LinkedIn: <a href="https://www.linkedin.com/in/lisa-raposa-millar/" target="_blank">Lisa's LinkedIn Profile</a></p>
+            <p>For a look at my coding work, visit my GitHub: <a href="https://github.com/raposamillar" target="_blank">Lisa's GitHub Profile</a></p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Email me: <a href="mailto:lisa.raposamillar@gmail.com">lisa.raposamillar@gmail.com</a></p>
+        </section>
       </div>
+    </main>
 
-      <div class="project">
-        <h3>RmB Pianos – Website Redesign</h3>
-        <p>A fresh, responsive website for a local piano technician, improving user trust and mobile accessibility.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email me: <a href="mailto:you@example.com">you@example.com</a></p>
-    </section>
-  </div>
-
-  <footer>
-    <p>© 2025 Lisa. Smart design with a creative spark.</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2025 Lisa. Smart design with a creative spark. | Coded from scratch using HTML5/CSS3</p>
+    </footer>
+  </body>
 </html>
