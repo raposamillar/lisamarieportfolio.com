@@ -153,3 +153,10 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
+
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
