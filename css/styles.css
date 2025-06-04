@@ -22,6 +22,10 @@ a:hover img {
   transform: scale(1.05);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -155,6 +159,24 @@ iframe {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 725px;
   height: 450px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1383A6;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  opacity: 1;
 }
 
 footer {
