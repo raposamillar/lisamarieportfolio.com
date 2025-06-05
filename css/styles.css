@@ -162,7 +162,7 @@ iframe {
 }
 
 .back-to-top {
-  position: fixed;
+  position: absolute;
   bottom: 30px;
   right: 30px;
   background-color: #1383A6;
