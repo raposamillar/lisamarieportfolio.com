@@ -188,6 +188,33 @@ footer {
   color: #777;
 }
 
+a {
+  color: #1383A6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.custom-button {
+  display: block;
+  width: 38%;
+  text-align: center;
+  background-color: #1383A6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #0f6b8a;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   iframe {
