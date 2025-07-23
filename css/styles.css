@@ -198,7 +198,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.custom-button {
+a.custom-button {
   display: block;
   width: 38%;
   text-align: center;
@@ -211,7 +211,7 @@ a:hover {
   text-decoration: none;
 }
 
-.custom-button:hover {
+a.custom-button:hover {
   background-color: #0f6b8a;
 }
 
