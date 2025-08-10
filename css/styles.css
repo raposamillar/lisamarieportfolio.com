@@ -263,6 +263,7 @@ a.custom-button:hover {
 
   #close-btn {
     position: absolute;
+    display: block;
     top: 1rem;
     right: 1rem;
     background: none;
