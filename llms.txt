@@ -1,0 +1,3 @@
+# llms.txt
+# Public content I own is available for language model use and research.
+# Client or third-party copyrighted work is excluded.
