@@ -1,25 +1,8 @@
+/* Box-sizing and basic link styles */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-a {
-  color: #1383A6;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #FDC82F;
-}
-
-a img {
-  transition: transform 0.3s ease;
-}
-
-a:hover img {
-  transform: scale(1.05);
 }
 
 html {
@@ -37,69 +20,118 @@ body {
   flex-direction: column;
   position: relative;
   width: 100%;
-  font-family: 'Red Hat Display',sans-serif;
-  margin: 0 auto;
-  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
   background: #f9f9f9;
   color: #333333;
   line-height: 1.6;
+  margin: 0 auto;
+  padding: 0;
 }
 
+/* Links */
+a {
+  color: #1383A6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FDC82F;
+  text-decoration: underline;
+}
+
+a img {
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom buttons */
+a.custom-button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  background-color: #1383A6;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+a.custom-button:hover {
+  background-color: #0f6b8a;
+}
+
+/* Header (desktop) */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 100%;
+  height: 100vh;
   position: relative;
+  color: white;
+  background-image: url('/assets/images/toronto-island.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 80, 110, 0.7);
+  z-index: 0;
+}
+
+/* Branding */
+.branding {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  background: #1383A6;
-  color: #FFFFFF;
-  padding: 2rem;
-  text-align: center;
+  z-index: 1;
 }
 
-header p {
-  font-size: 1.25rem;
+.branding h1 {
+  margin: 0;
+  font-family: 'Satisfy', cursive, serif;
+  font-size: 3.5rem;
 }
 
-h1 {
-  font-family: 'Cedarville Cursive', cursive, serif;
-  font-size: 4rem;
+#byline {
+  margin: 0;
+  font-size: 1.75rem;
 }
 
-#menu-toggle {
-  display: none;
-}
-
-#hamburger {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-  display: none;
-  font-size: 2.25rem;
-  cursor: pointer;
-  color: #FFFFFF;
-  margin-top: 1rem;
-}
-
+/* Navigation (desktop) */
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
+  gap: 1.5rem;
+  z-index: 1;
+  padding: 1.75rem;
+  margin-top: 0;
 }
 
 nav a {
   margin: 0 1rem;
   color: white;
-  text-decoration: none;
 }
 
-#close-btn {
+/* Hamburger & close button (desktop hidden) */
+#hamburger,
+#close-btn,
+#menu-toggle {
   display: none;
 }
 
+/* Page sections */
 #about {
   width: 100%;
   max-width: 800px;
@@ -170,6 +202,7 @@ iframe {
   height: 450px;
 }
 
+/* Back to top */
 .back-to-top {
   position: absolute;
   bottom: 30px;
@@ -188,6 +221,7 @@ iframe {
   opacity: 1;
 }
 
+/* Footer */
 footer {
   width: 100%;
   box-sizing: border-box;
@@ -197,43 +231,43 @@ footer {
   color: #777;
 }
 
-a {
-  color: #1383A6;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a.custom-button {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-  background-color: #1383A6;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  margin: 10px 0;
-  text-decoration: none;
-}
-
-a.custom-button:hover {
-  background-color: #0f6b8a;
-}
-
-/* Responsive styles */
+/* Mobile layout */
 @media screen and (max-width: 768px) {
-  iframe {
-    width: 100%;
-    height: 300px;
+  header {
+    height: auto;
+    background: cover;
+    min-height: 400px;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .branding {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .branding h1 {
+    padding: 2rem;
+    font-size: 2.5rem;
+    margin: 0.4rem;
+  }
+
+  #byline {
+    font-size: 1.75rem;
   }
 
   #hamburger {
     display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    color: #FFFFFF;
   }
 
   nav {
@@ -254,7 +288,7 @@ a.custom-button:hover {
   }
 
   nav a {
-    color:#1383A6;
+    color: #1383A6;
   }
 
   #menu-toggle:checked + #hamburger + nav {
@@ -262,8 +296,8 @@ a.custom-button:hover {
   }
 
   #close-btn {
-    position: absolute;
     display: block;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     background: none;
@@ -272,5 +306,10 @@ a.custom-button:hover {
     cursor: pointer;
     color: #333333;
     z-index: 1001;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
   }
 }
